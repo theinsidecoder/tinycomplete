@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tinycomplete"
+version = "0.1.0"
+description = "A tiny, zero-dependency autocomplete engine built on a Trie and a Heap."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Your Name" }]
+keywords = ["autocomplete", "trie", "heap", "typeahead", "data-structures", "algorithms"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Libraries",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/YOUR_USERNAME/tinycomplete"
+
+[project.scripts]
+tinycomplete = "tinycomplete.__main__:main"
+
+[tool.setuptools]
+packages = ["tinycomplete"]
